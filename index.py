@@ -12,17 +12,19 @@ tree = html.fromstring(resp.content)
 
 quote = tree.xpath('//p[@class="qt"]/text()')
 noquote = tree.xpath('//font[@class="bodytext"]/text()')
-
+print noquote
 for quotebody in quote:
     item = quotebody.strip()
     restart = True
-    while restart:
-        if noquote != 1:
+    while restart:  
+        if noquote is True:
+            print noquote
+            continue
+        else:
             print item
             restart = False
             break
-        else:
-            continue
+
 
 
 #if resp.status_code != 200:
