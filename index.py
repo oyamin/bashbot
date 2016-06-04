@@ -28,4 +28,4 @@ for quotebody in quote:
 #if resp.status_code != 200:
 #    print Failed
 #else:xpath('string(.)').extract()
-#    print resp.text
+#    print resp.tex
