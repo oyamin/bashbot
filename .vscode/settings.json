@@ -2,5 +2,6 @@
 {
     "editor.insertSpaces": false,
     "editor.lineNumbers": false,
-    "editor.scrollBeyondLastLine": false
+    "editor.scrollBeyondLastLine": false,
+    "files.exclude": { "**/.git": false }
 }
