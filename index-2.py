@@ -19,14 +19,14 @@ def search():
         for q_out in q_true:
             item = q_out.strip()
             items.append(item)
-        return items
+		return items
         
     return quote()
 
 restart = True     
 while restart:
     o_search = search()
-    if o_search is None:
+    if o_search :
         continue
     else:
         print "Bash Quote"
