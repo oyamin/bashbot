@@ -29,9 +29,9 @@ def main():
         if not o_search:
             continue
         else:
-            print "Bash Quote from %s" % url
-            print "----------------------------------------"
-            print '\n'.join(o_search)
+            print("Bash Quote from {}".format(url))
+            print("----------------------------------------")
+            print('\n'.join(o_search))
             restart = False
             break
     return
